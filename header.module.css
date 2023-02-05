@@ -1,0 +1,19 @@
+.AppWrapper {
+    display: grid;
+    grid-template-rows: 2fr 10fr 1fr;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas:
+        "l c r"
+        "lm c r"
+        "lm f r";
+    height: 625px; /*New*/
+}
+ul  {
+    list-style-type: none;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* grid */

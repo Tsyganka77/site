@@ -1,0 +1,38 @@
+.AppWrapper {
+    display: grid;
+    grid-template-rows: 2fr 10fr 1fr;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas:
+        "l c r"
+        "lm c r"
+        "lm f r";
+    height: 625px; /*New*/
+}
+ul  {
+    list-style-type: none;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+.footer {
+    grid-area: f;
+    min-height: 50px;
+    background-color: rgb(31, 31, 31);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 13px 13px 0px 0px;
+    /* 123 */
+    font-size: 1.5em;
+    color: white;   /*New*/
+    text-align: center;
+    /* 123 */
+}
+.footer_text{
+    font-size: 15px;
+    position: absolute;
+    left: 230px;
+    bottom: 20px;
+}
+
+/* grid */

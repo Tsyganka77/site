@@ -1,0 +1,58 @@
+.AppWrapper {
+    display: grid;
+    grid-template-rows: 2fr 10fr 1fr;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas:
+        "l c r"
+        "lm c r"
+        "lm f r";
+    height: 625px; /*New*/
+}
+ul  {
+    list-style-type: none;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+.rightMenu {
+    grid-area: r;
+    min-width: 20%;
+    background-color: rgb(37, 37, 37);
+}
+.messend_telega{
+    position: absolute;
+    right: 70px;
+    top: 180px;
+    transition: transform .2s;
+}
+.messend_telega:hover{
+    transform: scale(1.5);
+}
+.messend_vk{
+    position: absolute;
+    right: 70px;
+    top: 300px;
+    transition: transform .2s;
+}
+.messend_vk:hover{
+    transform: scale(1.5);
+}
+.messend_insta{
+    position: absolute;
+    right: 70px;
+    top: 430px;
+    transition: transform .2s;
+}
+.messend_insta:hover{
+    transform: scale(1.5);
+}
+.right_menu_opisanie{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+/* grid */
