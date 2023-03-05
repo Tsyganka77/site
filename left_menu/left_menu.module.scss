@@ -1,3 +1,20 @@
+$color: rgb(65, 65, 65);
+
+@mixin li(){
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 2px dashed $color;
+    padding: 10px;
+
+    &:hover{
+        background-color: $color;
+        transition: 300ms;
+        cursor: pointer;
+    }
+}
+
+
+
 .AppWrapper {
     display: grid;
     grid-template-rows: 2fr 10fr 1fr;
@@ -20,19 +37,10 @@ a {
     font-weight: 600;
 }
 /*ul li { 
-
 }*/
 .li_lefttt{ /*New*/
-    text-align: center;
-    font-size: 2em;
-    border-bottom: 2px dashed rgb(65, 65, 65);
-    padding: 10px;
+    @include li();
     border-radius: 0px 30px 0px 0px;
-}
-.li_lefttt:hover{
-    background-color: rgb(65, 65, 65);
-    transition: 300ms;
-    cursor: pointer;
 }
 /*ul li:hover{
     background-color: rgb(65, 65, 65);
@@ -40,25 +48,10 @@ a {
     cursor: pointer;
 }*/
 .li_left{
-    text-align: center;
-    font-size: 2em;
-    border-bottom: 2px dashed rgb(65, 65, 65);
-    padding: 10px;
-}
-.li_left:hover{
-    background-color: rgb(65, 65, 65);
-    transition: 300ms;
-    cursor: pointer;
+    @include li();
 }
 .li_leftt{
-    text-align: center;
-    font-size: 2em;
-    padding: 10px;
-}
-.li_leftt:hover{
-    background-color: rgb(65, 65, 65);
-    transition: 300ms;
-    cursor: pointer;
+@include li();
 }
 .leftMenu{
     grid-area: lm;

@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(65, 65, 65); /*New*/
+}
+
+.logo {
+  text-align: center;
+  border: 1px solid #000;
+  grid-area: l;
+  background-color: rgb(255, 140, 0);
+  border-radius: 0px 30px 30px 0px; /*New*/
+  color: white;
+  height: 94px;
+  width: 190px;
+}
+
+.logo_btn {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 20px;
+  width: 190px;
+  height: 74px; /*New*/
+  border-radius: 0px 30px 30px 0px; /*New*/
+}
+.logo_btn:hover {
+  background-color: rgb(255, 68, 0);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  right: 500px;
+  top: 30px;
+  font-size: 30px;
+  color: white;
+}

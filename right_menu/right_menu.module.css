@@ -1,0 +1,80 @@
+.AppWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 10fr 1fr;
+  grid-template-rows: 2fr 10fr 1fr;
+  -ms-grid-columns: 2fr 10fr 2fr;
+  grid-template-columns: 2fr 10fr 2fr;
+      grid-template-areas: "l c r" "lm c r" "lm f r";
+  height: 625px; /*New*/
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rightMenu {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: r;
+  min-width: 20%;
+  background-color: rgb(37, 37, 37);
+}
+
+.messend_telega {
+  position: absolute;
+  right: 70px;
+  top: 180px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.messend_telega:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.messend_vk {
+  position: absolute;
+  right: 70px;
+  top: 300px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.messend_vk:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.messend_insta {
+  position: absolute;
+  right: 70px;
+  top: 420px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.messend_insta:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.right_menu_opisanie {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  font-size: 25px;
+  color: white;
+}
+
+/* grid */

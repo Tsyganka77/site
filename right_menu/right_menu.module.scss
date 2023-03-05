@@ -1,3 +1,15 @@
+@mixin mess($top){
+    position: absolute;
+    right: 70px;
+    top: $top;
+    transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+
 .AppWrapper {
     display: grid;
     grid-template-rows: 2fr 10fr 1fr;
@@ -21,31 +33,13 @@ a {
     background-color: rgb(37, 37, 37);
 }
 .messend_telega{
-    position: absolute;
-    right: 70px;
-    top: 180px;
-    transition: transform .2s;
-}
-.messend_telega:hover{
-    transform: scale(1.5);
+@include mess(180px);
 }
 .messend_vk{
-    position: absolute;
-    right: 70px;
-    top: 300px;
-    transition: transform .2s;
-}
-.messend_vk:hover{
-    transform: scale(1.5);
+    @include mess(300px);
 }
 .messend_insta{
-    position: absolute;
-    right: 70px;
-    top: 430px;
-    transition: transform .2s;
-}
-.messend_insta:hover{
-    transform: scale(1.5);
+    @include mess(420px);
 }
 .right_menu_opisanie{
     position: absolute;
